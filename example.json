@@ -1,0 +1,19 @@
+{
+  "name": "<策略名称>",
+  "id": "<策略ID>",
+  "policy": {
+    "official": "<bool值:是否允许官方产品>",
+    "second-print": "<bool值,是否允许二次印刷官方图片>",
+    "copy": "<bool值,是否允许临摹作品>",
+    "ai": "<bool值,是否允许AI生成作品（Beta测试中）>"
+  },
+  "range": {
+    "official": "<int值 0-100范围,官方产品判定标准分>",
+    "second-print": "<int值 0-100范围,二次印刷判定标准分>",
+    "copy": "<int值 0-100范围,临摹判定标准分>",
+    "ai": "<int值 0-100范围,AI作品判定标准分>",
+    "colleagues": "<int值 0-100范围,同人作品相似度最高不超过的标准分>"
+  },
+  "text-engine": "<mapreduce、spark或flink 文本处理引擎选项>",
+  "image-engine": "<opencv或matlab 图像处理引擎选项>"
+}
